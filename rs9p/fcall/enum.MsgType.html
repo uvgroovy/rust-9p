@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `MsgType` enum in crate `rs9p`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, MsgType">
+
+    <title>rs9p::fcall::MsgType - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rs9p</a>::<wbr><a href='index.html'>fcall</a></p><script>window.sidebarCurrent = {name: 'MsgType', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>rs9p</a>::<wbr><a href='index.html'>fcall</a>::<wbr><a class='enum' href=''>MsgType</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span></span></h1>
+<pre class='rust enum'>pub enum MsgType {
+    Tlerror,
+    Rlerror,
+    Tstatfs,
+    Rstatfs,
+    Tlopen,
+    Rlopen,
+    Tlcreate,
+    Rlcreate,
+    Tsymlink,
+    Rsymlink,
+    Tmknod,
+    Rmknod,
+    Trename,
+    Rrename,
+    Treadlink,
+    Rreadlink,
+    Tgetattr,
+    Rgetattr,
+    Tsetattr,
+    Rsetattr,
+    Txattrwalk,
+    Rxattrwalk,
+    Txattrcreate,
+    Rxattrcreate,
+    Treaddir,
+    Rreaddir,
+    Tfsync,
+    Rfsync,
+    Tlock,
+    Rlock,
+    Tgetlock,
+    Rgetlock,
+    Tlink,
+    Rlink,
+    Tmkdir,
+    Rmkdir,
+    Trenameat,
+    Rrenameat,
+    Tunlinkat,
+    Runlinkat,
+    Tversion,
+    Rversion,
+    Tauth,
+    Rauth,
+    Tattach,
+    Rattach,
+    Tflush,
+    Rflush,
+    Twalk,
+    Rwalk,
+    Tread,
+    Rread,
+    Twrite,
+    Rwrite,
+    Tclunk,
+    Rclunk,
+    Tremove,
+    Rremove,
+}</pre><div class='docblock'><p>Message type, 9P operations</p>
+</div><h2 class='variants'>Variants</h2>
+<span id='variant.Tlerror' class='variant'><span id='Tlerror.v' class='invisible'><code>Tlerror</code></span></span><span id='variant.Rlerror' class='variant'><span id='Rlerror.v' class='invisible'><code>Rlerror</code></span></span><span id='variant.Tstatfs' class='variant'><span id='Tstatfs.v' class='invisible'><code>Tstatfs</code></span></span><span id='variant.Rstatfs' class='variant'><span id='Rstatfs.v' class='invisible'><code>Rstatfs</code></span></span><span id='variant.Tlopen' class='variant'><span id='Tlopen.v' class='invisible'><code>Tlopen</code></span></span><span id='variant.Rlopen' class='variant'><span id='Rlopen.v' class='invisible'><code>Rlopen</code></span></span><span id='variant.Tlcreate' class='variant'><span id='Tlcreate.v' class='invisible'><code>Tlcreate</code></span></span><span id='variant.Rlcreate' class='variant'><span id='Rlcreate.v' class='invisible'><code>Rlcreate</code></span></span><span id='variant.Tsymlink' class='variant'><span id='Tsymlink.v' class='invisible'><code>Tsymlink</code></span></span><span id='variant.Rsymlink' class='variant'><span id='Rsymlink.v' class='invisible'><code>Rsymlink</code></span></span><span id='variant.Tmknod' class='variant'><span id='Tmknod.v' class='invisible'><code>Tmknod</code></span></span><span id='variant.Rmknod' class='variant'><span id='Rmknod.v' class='invisible'><code>Rmknod</code></span></span><span id='variant.Trename' class='variant'><span id='Trename.v' class='invisible'><code>Trename</code></span></span><span id='variant.Rrename' class='variant'><span id='Rrename.v' class='invisible'><code>Rrename</code></span></span><span id='variant.Treadlink' class='variant'><span id='Treadlink.v' class='invisible'><code>Treadlink</code></span></span><span id='variant.Rreadlink' class='variant'><span id='Rreadlink.v' class='invisible'><code>Rreadlink</code></span></span><span id='variant.Tgetattr' class='variant'><span id='Tgetattr.v' class='invisible'><code>Tgetattr</code></span></span><span id='variant.Rgetattr' class='variant'><span id='Rgetattr.v' class='invisible'><code>Rgetattr</code></span></span><span id='variant.Tsetattr' class='variant'><span id='Tsetattr.v' class='invisible'><code>Tsetattr</code></span></span><span id='variant.Rsetattr' class='variant'><span id='Rsetattr.v' class='invisible'><code>Rsetattr</code></span></span><span id='variant.Txattrwalk' class='variant'><span id='Txattrwalk.v' class='invisible'><code>Txattrwalk</code></span></span><span id='variant.Rxattrwalk' class='variant'><span id='Rxattrwalk.v' class='invisible'><code>Rxattrwalk</code></span></span><span id='variant.Txattrcreate' class='variant'><span id='Txattrcreate.v' class='invisible'><code>Txattrcreate</code></span></span><span id='variant.Rxattrcreate' class='variant'><span id='Rxattrcreate.v' class='invisible'><code>Rxattrcreate</code></span></span><span id='variant.Treaddir' class='variant'><span id='Treaddir.v' class='invisible'><code>Treaddir</code></span></span><span id='variant.Rreaddir' class='variant'><span id='Rreaddir.v' class='invisible'><code>Rreaddir</code></span></span><span id='variant.Tfsync' class='variant'><span id='Tfsync.v' class='invisible'><code>Tfsync</code></span></span><span id='variant.Rfsync' class='variant'><span id='Rfsync.v' class='invisible'><code>Rfsync</code></span></span><span id='variant.Tlock' class='variant'><span id='Tlock.v' class='invisible'><code>Tlock</code></span></span><span id='variant.Rlock' class='variant'><span id='Rlock.v' class='invisible'><code>Rlock</code></span></span><span id='variant.Tgetlock' class='variant'><span id='Tgetlock.v' class='invisible'><code>Tgetlock</code></span></span><span id='variant.Rgetlock' class='variant'><span id='Rgetlock.v' class='invisible'><code>Rgetlock</code></span></span><span id='variant.Tlink' class='variant'><span id='Tlink.v' class='invisible'><code>Tlink</code></span></span><span id='variant.Rlink' class='variant'><span id='Rlink.v' class='invisible'><code>Rlink</code></span></span><span id='variant.Tmkdir' class='variant'><span id='Tmkdir.v' class='invisible'><code>Tmkdir</code></span></span><span id='variant.Rmkdir' class='variant'><span id='Rmkdir.v' class='invisible'><code>Rmkdir</code></span></span><span id='variant.Trenameat' class='variant'><span id='Trenameat.v' class='invisible'><code>Trenameat</code></span></span><span id='variant.Rrenameat' class='variant'><span id='Rrenameat.v' class='invisible'><code>Rrenameat</code></span></span><span id='variant.Tunlinkat' class='variant'><span id='Tunlinkat.v' class='invisible'><code>Tunlinkat</code></span></span><span id='variant.Runlinkat' class='variant'><span id='Runlinkat.v' class='invisible'><code>Runlinkat</code></span></span><span id='variant.Tversion' class='variant'><span id='Tversion.v' class='invisible'><code>Tversion</code></span></span><span id='variant.Rversion' class='variant'><span id='Rversion.v' class='invisible'><code>Rversion</code></span></span><span id='variant.Tauth' class='variant'><span id='Tauth.v' class='invisible'><code>Tauth</code></span></span><span id='variant.Rauth' class='variant'><span id='Rauth.v' class='invisible'><code>Rauth</code></span></span><span id='variant.Tattach' class='variant'><span id='Tattach.v' class='invisible'><code>Tattach</code></span></span><span id='variant.Rattach' class='variant'><span id='Rattach.v' class='invisible'><code>Rattach</code></span></span><span id='variant.Tflush' class='variant'><span id='Tflush.v' class='invisible'><code>Tflush</code></span></span><span id='variant.Rflush' class='variant'><span id='Rflush.v' class='invisible'><code>Rflush</code></span></span><span id='variant.Twalk' class='variant'><span id='Twalk.v' class='invisible'><code>Twalk</code></span></span><span id='variant.Rwalk' class='variant'><span id='Rwalk.v' class='invisible'><code>Rwalk</code></span></span><span id='variant.Tread' class='variant'><span id='Tread.v' class='invisible'><code>Tread</code></span></span><span id='variant.Rread' class='variant'><span id='Rread.v' class='invisible'><code>Rread</code></span></span><span id='variant.Twrite' class='variant'><span id='Twrite.v' class='invisible'><code>Twrite</code></span></span><span id='variant.Rwrite' class='variant'><span id='Rwrite.v' class='invisible'><code>Rwrite</code></span></span><span id='variant.Tclunk' class='variant'><span id='Tclunk.v' class='invisible'><code>Tclunk</code></span></span><span id='variant.Rclunk' class='variant'><span id='Rclunk.v' class='invisible'><code>Rclunk</code></span></span><span id='variant.Tremove' class='variant'><span id='Tremove.v' class='invisible'><code>Tremove</code></span></span><span id='variant.Rremove' class='variant'><span id='Rremove.v' class='invisible'><code>Rremove</code></span></span><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-300' class='srclink' href='../../src/rs9p/src/fcall.rs.html#569-589' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.is_t' class='method'><span id='is_t.v' class='invisible'><code>fn <a href='#method.is_t' class='fnname'>is_t</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>If the message type is T-message</p>
+</div><h4 id='method.is_r' class='method'><span id='is_r.v' class='invisible'><code>fn <a href='#method.is_r' class='fnname'>is_r</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>If the message type is R-message</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4343' class='srclink' href='../../src/rs9p/src/fcall.rs.html#493' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4344' class='srclink' href='../../src/rs9p/src/fcall.rs.html#493' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4347' class='srclink' href='../../src/rs9p/src/fcall.rs.html#493' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4409' class='srclink' href='../../src/rs9p/src/fcall.rs.html#493' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4415' class='srclink' href='../../src/rs9p/src/fcall.rs.html#493' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html' title='core::cmp::PartialOrd'>PartialOrd</a> for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4418' class='srclink' href='../../src/rs9p/src/fcall.rs.html#493' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.partial_cmp' class='method'><span id='partial_cmp.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#tymethod.partial_cmp' class='fnname'>partial_cmp</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='https://doc.rust-lang.org/nightly/core/cmp/enum.Ordering.html' title='core::cmp::Ordering'>Ordering</a>&gt;</code></span></h4>
+<div class='docblock'><p>This method returns an ordering between <code>self</code> and <code>other</code> values if one exists. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#tymethod.partial_cmp">Read more</a></p>
+</div><h4 id='method.lt' class='method'><span id='lt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.lt' class='fnname'>lt</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests less than (for <code>self</code> and <code>other</code>) and is used by the <code>&lt;</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.lt">Read more</a></p>
+</div><h4 id='method.le' class='method'><span id='le.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.le' class='fnname'>le</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests less than or equal to (for <code>self</code> and <code>other</code>) and is used by the <code>&lt;=</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.le">Read more</a></p>
+</div><h4 id='method.gt' class='method'><span id='gt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.gt' class='fnname'>gt</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests greater than (for <code>self</code> and <code>other</code>) and is used by the <code>&gt;</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.gt">Read more</a></p>
+</div><h4 id='method.ge' class='method'><span id='ge.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.ge' class='fnname'>ge</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests greater than or equal to (for <code>self</code> and <code>other</code>) and is used by the <code>&gt;=</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.ge">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html' title='core::cmp::Ord'>Ord</a> for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4424' class='srclink' href='../../src/rs9p/src/fcall.rs.html#493' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.cmp' class='method'><span id='cmp.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html#tymethod.cmp' class='fnname'>cmp</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/cmp/enum.Ordering.html' title='core::cmp::Ordering'>Ordering</a></code></span></h4>
+<div class='docblock'><p>This method returns an <code>Ordering</code> between <code>self</code> and <code>other</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html#tymethod.cmp">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html' title='core::hash::Hash'>Hash</a> for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4430' class='srclink' href='../../src/rs9p/src/fcall.rs.html#493' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class='method'><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the state given, updating the hasher as necessary.</p>
+</div><h4 id='method.hash_slice' class='method'><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[Self]</a>, state: &amp;mut H) <span class='where'>where H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a></span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the state provided.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../../num_traits/cast/trait.FromPrimitive.html' title='num_traits::cast::FromPrimitive'>FromPrimitive</a> for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='method.from_i64' class='method'><span id='from_i64.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#tymethod.from_i64' class='fnname'>from_i64</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert an <code>i64</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#tymethod.from_i64">Read more</a></p>
+</div><h4 id='method.from_u64' class='method'><span id='from_u64.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#tymethod.from_u64' class='fnname'>from_u64</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert an <code>u64</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#tymethod.from_u64">Read more</a></p>
+</div><h4 id='method.from_isize' class='method'><span id='from_isize.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_isize' class='fnname'>from_isize</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.isize.html'>isize</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert an <code>isize</code> to return an optional value of this type. If the value cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_isize">Read more</a></p>
+</div><h4 id='method.from_i8' class='method'><span id='from_i8.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_i8' class='fnname'>from_i8</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i8.html'>i8</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert an <code>i8</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_i8">Read more</a></p>
+</div><h4 id='method.from_i16' class='method'><span id='from_i16.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_i16' class='fnname'>from_i16</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert an <code>i16</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_i16">Read more</a></p>
+</div><h4 id='method.from_i32' class='method'><span id='from_i32.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_i32' class='fnname'>from_i32</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert an <code>i32</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_i32">Read more</a></p>
+</div><h4 id='method.from_usize' class='method'><span id='from_usize.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_usize' class='fnname'>from_usize</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert a <code>usize</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_usize">Read more</a></p>
+</div><h4 id='method.from_u8' class='method'><span id='from_u8.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_u8' class='fnname'>from_u8</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert an <code>u8</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_u8">Read more</a></p>
+</div><h4 id='method.from_u16' class='method'><span id='from_u16.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_u16' class='fnname'>from_u16</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert an <code>u16</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_u16">Read more</a></p>
+</div><h4 id='method.from_u32' class='method'><span id='from_u32.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_u32' class='fnname'>from_u32</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert an <code>u32</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_u32">Read more</a></p>
+</div><h4 id='method.from_f32' class='method'><span id='from_f32.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_f32' class='fnname'>from_f32</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert a <code>f32</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_f32">Read more</a></p>
+</div><h4 id='method.from_f64' class='method'><span id='from_f64.v' class='invisible'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_f64' class='fnname'>from_f64</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Convert a <code>f64</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_f64">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;'a&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;&amp;'a <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>&gt; for <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-335' class='srclink' href='../../src/rs9p/src/fcall.rs.html#591-653' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from' class='method'><span id='from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(fcall: &amp;'a <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>) -&gt; <a class='enum' href='../../rs9p/fcall/enum.MsgType.html' title='rs9p::fcall::MsgType'>MsgType</a></code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rs9p";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

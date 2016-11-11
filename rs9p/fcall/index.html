@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `fcall` mod in crate `rs9p`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, fcall">
+
+    <title>rs9p::fcall - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rs9p</a></p><script>window.sidebarCurrent = {name: 'fcall', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rs9p</a>::<wbr><a class='mod' href=''>fcall</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-217' class='srclink' href='../../src/rs9p/src/fcall.rs.html#2-807' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>9P protocol data types and constants.</p>
+
+<h1 id='protocol' class='section-header'><a href='#protocol'>Protocol</a></h1>
+<p>9P2000.L</p>
+</div><h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
+<table><tr><td><code>pub use self::<a class='mod'
+                                       href='./ltype/index.html'>ltype</a>::<a class='struct' href='../../rs9p/fcall/ltype/struct.LockType.html' title='rs9p::fcall::ltype::LockType'>LockType</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
+                                       href='./lflag/index.html'>lflag</a>::<a class='struct' href='../../rs9p/fcall/lflag/struct.LockFlag.html' title='rs9p::fcall::lflag::LockFlag'>LockFlag</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
+                                       href='./lstatus/index.html'>lstatus</a>::<a class='struct' href='../../rs9p/fcall/lstatus/struct.LockStatus.html' title='rs9p::fcall::lstatus::LockStatus'>LockStatus</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
+                                       href='./qt/index.html'>qt</a>::<a class='struct' href='../../rs9p/fcall/qt/struct.QidType.html' title='rs9p::fcall::qt::QidType'>QidType</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
+                                       href='./getattr/index.html'>getattr</a>::<a class='struct' href='../../rs9p/fcall/getattr/struct.GetattrMask.html' title='rs9p::fcall::getattr::GetattrMask'>GetattrMask</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
+                                       href='./setattr/index.html'>setattr</a>::<a class='struct' href='../../rs9p/fcall/setattr/struct.SetattrMask.html' title='rs9p::fcall::setattr::SetattrMask'>SetattrMask</a>;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='getattr/index.html'
+                                  title='rs9p::fcall::getattr'>getattr</a></td>
+                           <td class='docblock-short'>
+                                <p>Bits in <code>mask</code> and <code>valid</code> of <code>Tgetattr</code> and <code>Rgetattr</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='lflag/index.html'
+                                  title='rs9p::fcall::lflag'>lflag</a></td>
+                           <td class='docblock-short'>
+                                <p>File lock flags, Flock.flags</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='lstatus/index.html'
+                                  title='rs9p::fcall::lstatus'>lstatus</a></td>
+                           <td class='docblock-short'>
+                                <p>File lock status</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='ltype/index.html'
+                                  title='rs9p::fcall::ltype'>ltype</a></td>
+                           <td class='docblock-short'>
+                                <p>File lock type, Flock.typ</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='p92000/index.html'
+                                  title='rs9p::fcall::p92000'>p92000</a></td>
+                           <td class='docblock-short'>
+                                <p>Old 9P2000 protocol types</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='qt/index.html'
+                                  title='rs9p::fcall::qt'>qt</a></td>
+                           <td class='docblock-short'>
+                                <p>Bits in Qid.typ</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='setattr/index.html'
+                                  title='rs9p::fcall::setattr'>setattr</a></td>
+                           <td class='docblock-short'>
+                                <p>Bits in <code>mask</code> of <code>Tsetattr</code>.</p>
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Data.html'
+                                  title='rs9p::fcall::Data'>Data</a></td>
+                           <td class='docblock-short'>
+                                <p>Data type used in <code>Rread</code> and <code>Twrite</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DirEntry.html'
+                                  title='rs9p::fcall::DirEntry'>DirEntry</a></td>
+                           <td class='docblock-short'>
+                                <p>Directory entry used in <code>Rreaddir</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DirEntryData.html'
+                                  title='rs9p::fcall::DirEntryData'>DirEntryData</a></td>
+                           <td class='docblock-short'>
+                                <p>Directory entry array</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Flock.html'
+                                  title='rs9p::fcall::Flock'>Flock</a></td>
+                           <td class='docblock-short'>
+                                <p>Similar to Linux <code>struct flock</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Getlock.html'
+                                  title='rs9p::fcall::Getlock'>Getlock</a></td>
+                           <td class='docblock-short'>
+                                <p>Getlock structure</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Msg.html'
+                                  title='rs9p::fcall::Msg'>Msg</a></td>
+                           <td class='docblock-short'>
+                                <p>Envelope for 9P messages</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Qid.html'
+                                  title='rs9p::fcall::Qid'>Qid</a></td>
+                           <td class='docblock-short'>
+                                <p>Server side data type for path tracking</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetAttr.html'
+                                  title='rs9p::fcall::SetAttr'>SetAttr</a></td>
+                           <td class='docblock-short'>
+                                <p>Subset of <code>Stat</code> used for <code>Tsetattr</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Stat.html'
+                                  title='rs9p::fcall::Stat'>Stat</a></td>
+                           <td class='docblock-short'>
+                                <p>File attributes corresponding to <code>struct stat</code> of Linux.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Statfs.html'
+                                  title='rs9p::fcall::Statfs'>Statfs</a></td>
+                           <td class='docblock-short'>
+                                <p>Filesystem information corresponding to <code>struct statfs</code> of Linux.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Time.html'
+                                  title='rs9p::fcall::Time'>Time</a></td>
+                           <td class='docblock-short'>
+                                <p>Time struct</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Fcall.html'
+                                  title='rs9p::fcall::Fcall'>Fcall</a></td>
+                           <td class='docblock-short'>
+                                <p>A data type encapsulating the various 9P messages</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.MsgType.html'
+                                  title='rs9p::fcall::MsgType'>MsgType</a></td>
+                           <td class='docblock-short'>
+                                <p>Message type, 9P operations</p>
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.IOHDRSZ.html'
+                                  title='rs9p::fcall::IOHDRSZ'>IOHDRSZ</a></td>
+                           <td class='docblock-short'>
+                                <p>Ample room for <code>Twrite</code>/<code>Rread</code> header</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.NOFID.html'
+                                  title='rs9p::fcall::NOFID'>NOFID</a></td>
+                           <td class='docblock-short'>
+                                <p>Special value which <code>Tattach</code> with no auth must use as <code>afid</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.NONUNAME.html'
+                                  title='rs9p::fcall::NONUNAME'>NONUNAME</a></td>
+                           <td class='docblock-short'>
+                                <p>Special uid which <code>Tauth</code>/<code>Tattach</code> use as <code>n_uname</code> to indicate no uid is specified</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.NOTAG.html'
+                                  title='rs9p::fcall::NOTAG'>NOTAG</a></td>
+                           <td class='docblock-short'>
+                                <p>Special tag which <code>Tversion</code>/<code>Rversion</code> must use as <code>tag</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.P92000.html'
+                                  title='rs9p::fcall::P92000'>P92000</a></td>
+                           <td class='docblock-short'>
+                                <p>9P2000 version string</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.P92000L.html'
+                                  title='rs9p::fcall::P92000L'>P92000L</a></td>
+                           <td class='docblock-short'>
+                                <p>9P2000.L version string</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.READDIRHDRSZ.html'
+                                  title='rs9p::fcall::READDIRHDRSZ'>READDIRHDRSZ</a></td>
+                           <td class='docblock-short'>
+                                <p>Room for readdir header</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.V9FS_PORT.html'
+                                  title='rs9p::fcall::V9FS_PORT'>V9FS_PORT</a></td>
+                           <td class='docblock-short'>
+                                <p>v9fs default port</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rs9p";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Fcall` enum in crate `rs9p`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Fcall">
+
+    <title>rs9p::fcall::Fcall - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rs9p</a>::<wbr><a href='index.html'>fcall</a></p><script>window.sidebarCurrent = {name: 'Fcall', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>rs9p</a>::<wbr><a href='index.html'>fcall</a>::<wbr><a class='enum' href=''>Fcall</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-4440' class='srclink' href='../../src/rs9p/src/fcall.rs.html#657-736' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum Fcall {
+    Rlerror {
+        ecode: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Tstatfs {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rstatfs {
+        statfs: <a class='struct' href='../../rs9p/fcall/struct.Statfs.html' title='rs9p::fcall::Statfs'>Statfs</a>,
+    },
+    Tlopen {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        flags: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rlopen {
+        qid: <a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>,
+        iounit: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Tlcreate {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        flags: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        mode: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        gid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rlcreate {
+        qid: <a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>,
+        iounit: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Tsymlink {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        symtgt: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        gid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rsymlink {
+        qid: <a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>,
+    },
+    Tmknod {
+        dfid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        mode: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        major: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        minor: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        gid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rmknod {
+        qid: <a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>,
+    },
+    Trename {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        dfid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    },
+    Rrename,
+    Treadlink {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rreadlink {
+        target: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    },
+    Tgetattr {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        req_mask: <a class='struct' href='../../rs9p/fcall/getattr/struct.GetattrMask.html' title='rs9p::fcall::getattr::GetattrMask'>GetattrMask</a>,
+    },
+    Rgetattr {
+        valid: <a class='struct' href='../../rs9p/fcall/getattr/struct.GetattrMask.html' title='rs9p::fcall::getattr::GetattrMask'>GetattrMask</a>,
+        qid: <a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>,
+        stat: <a class='struct' href='../../rs9p/fcall/struct.Stat.html' title='rs9p::fcall::Stat'>Stat</a>,
+    },
+    Tsetattr {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        valid: <a class='struct' href='../../rs9p/fcall/setattr/struct.SetattrMask.html' title='rs9p::fcall::setattr::SetattrMask'>SetattrMask</a>,
+        stat: <a class='struct' href='../../rs9p/fcall/struct.SetAttr.html' title='rs9p::fcall::SetAttr'>SetAttr</a>,
+    },
+    Rsetattr,
+    Txattrwalk {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        newfid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    },
+    Rxattrwalk {
+        size: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>,
+    },
+    Txattrcreate {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        attr_size: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>,
+        flags: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rxattrcreate,
+    Treaddir {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        offset: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>,
+        count: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rreaddir {
+        data: <a class='struct' href='../../rs9p/fcall/struct.DirEntryData.html' title='rs9p::fcall::DirEntryData'>DirEntryData</a>,
+    },
+    Tfsync {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rfsync,
+    Tlock {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        flock: <a class='struct' href='../../rs9p/fcall/struct.Flock.html' title='rs9p::fcall::Flock'>Flock</a>,
+    },
+    Rlock {
+        status: <a class='struct' href='../../rs9p/fcall/lstatus/struct.LockStatus.html' title='rs9p::fcall::lstatus::LockStatus'>LockStatus</a>,
+    },
+    Tgetlock {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        flock: <a class='struct' href='../../rs9p/fcall/struct.Getlock.html' title='rs9p::fcall::Getlock'>Getlock</a>,
+    },
+    Rgetlock {
+        flock: <a class='struct' href='../../rs9p/fcall/struct.Getlock.html' title='rs9p::fcall::Getlock'>Getlock</a>,
+    },
+    Tlink {
+        dfid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    },
+    Rlink,
+    Tmkdir {
+        dfid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        mode: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        gid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rmkdir {
+        qid: <a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>,
+    },
+    Trenameat {
+        olddirfid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        oldname: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        newdirfid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        newname: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    },
+    Rrenameat,
+    Tunlinkat {
+        dirfd: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        flags: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Runlinkat,
+    Tauth {
+        afid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        uname: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        aname: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        n_uname: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rauth {
+        aqid: <a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>,
+    },
+    Tattach {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        afid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        uname: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        aname: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        n_uname: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rattach {
+        qid: <a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>,
+    },
+    Tversion {
+        msize: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        version: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    },
+    Rversion {
+        msize: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        version: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    },
+    Tflush {
+        oldtag: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>,
+    },
+    Rflush,
+    Twalk {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        newfid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        wnames: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    },
+    Rwalk {
+        wqids: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>&gt;,
+    },
+    Tread {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        offset: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>,
+        count: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rread {
+        data: <a class='struct' href='../../rs9p/fcall/struct.Data.html' title='rs9p::fcall::Data'>Data</a>,
+    },
+    Twrite {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        offset: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>,
+        data: <a class='struct' href='../../rs9p/fcall/struct.Data.html' title='rs9p::fcall::Data'>Data</a>,
+    },
+    Rwrite {
+        count: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Tclunk {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rclunk,
+    Tremove {
+        fid: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Rremove,
+}</pre><div class='docblock'><p>A data type encapsulating the various 9P messages</p>
+</div><h2 class='variants'>Variants</h2>
+<span id='variant.Rlerror' class='variant'><span id='Rlerror.v' class='invisible'><code>Rlerror</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rlerror.field.ecode'><span id='Rlerror.v.ecode.v' class='invisible'><code>ecode:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Tstatfs' class='variant'><span id='Tstatfs.v' class='invisible'><code>Tstatfs</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tstatfs.field.fid'><span id='Tstatfs.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rstatfs' class='variant'><span id='Rstatfs.v' class='invisible'><code>Rstatfs</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rstatfs.field.statfs'><span id='Rstatfs.v.statfs.v' class='invisible'><code>statfs:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Statfs.html' title='rs9p::fcall::Statfs'>Statfs</a></code></span></td><td></td></tr></table><span id='variant.Tlopen' class='variant'><span id='Tlopen.v' class='invisible'><code>Tlopen</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tlopen.field.fid'><span id='Tlopen.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tlopen.field.flags'><span id='Tlopen.v.flags.v' class='invisible'><code>flags:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rlopen' class='variant'><span id='Rlopen.v' class='invisible'><code>Rlopen</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rlopen.field.qid'><span id='Rlopen.v.qid.v' class='invisible'><code>qid:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a></code></span></td><td></td></tr><tr><td id='variant.Rlopen.field.iounit'><span id='Rlopen.v.iounit.v' class='invisible'><code>iounit:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Tlcreate' class='variant'><span id='Tlcreate.v' class='invisible'><code>Tlcreate</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tlcreate.field.fid'><span id='Tlcreate.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tlcreate.field.name'><span id='Tlcreate.v.name.v' class='invisible'><code>name:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tlcreate.field.flags'><span id='Tlcreate.v.flags.v' class='invisible'><code>flags:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tlcreate.field.mode'><span id='Tlcreate.v.mode.v' class='invisible'><code>mode:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tlcreate.field.gid'><span id='Tlcreate.v.gid.v' class='invisible'><code>gid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rlcreate' class='variant'><span id='Rlcreate.v' class='invisible'><code>Rlcreate</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rlcreate.field.qid'><span id='Rlcreate.v.qid.v' class='invisible'><code>qid:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a></code></span></td><td></td></tr><tr><td id='variant.Rlcreate.field.iounit'><span id='Rlcreate.v.iounit.v' class='invisible'><code>iounit:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Tsymlink' class='variant'><span id='Tsymlink.v' class='invisible'><code>Tsymlink</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tsymlink.field.fid'><span id='Tsymlink.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tsymlink.field.name'><span id='Tsymlink.v.name.v' class='invisible'><code>name:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tsymlink.field.symtgt'><span id='Tsymlink.v.symtgt.v' class='invisible'><code>symtgt:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tsymlink.field.gid'><span id='Tsymlink.v.gid.v' class='invisible'><code>gid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rsymlink' class='variant'><span id='Rsymlink.v' class='invisible'><code>Rsymlink</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rsymlink.field.qid'><span id='Rsymlink.v.qid.v' class='invisible'><code>qid:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a></code></span></td><td></td></tr></table><span id='variant.Tmknod' class='variant'><span id='Tmknod.v' class='invisible'><code>Tmknod</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tmknod.field.dfid'><span id='Tmknod.v.dfid.v' class='invisible'><code>dfid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tmknod.field.name'><span id='Tmknod.v.name.v' class='invisible'><code>name:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tmknod.field.mode'><span id='Tmknod.v.mode.v' class='invisible'><code>mode:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tmknod.field.major'><span id='Tmknod.v.major.v' class='invisible'><code>major:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tmknod.field.minor'><span id='Tmknod.v.minor.v' class='invisible'><code>minor:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tmknod.field.gid'><span id='Tmknod.v.gid.v' class='invisible'><code>gid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rmknod' class='variant'><span id='Rmknod.v' class='invisible'><code>Rmknod</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rmknod.field.qid'><span id='Rmknod.v.qid.v' class='invisible'><code>qid:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a></code></span></td><td></td></tr></table><span id='variant.Trename' class='variant'><span id='Trename.v' class='invisible'><code>Trename</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Trename.field.fid'><span id='Trename.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Trename.field.dfid'><span id='Trename.v.dfid.v' class='invisible'><code>dfid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Trename.field.name'><span id='Trename.v.name.v' class='invisible'><code>name:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr></table><span id='variant.Rrename' class='variant'><span id='Rrename.v' class='invisible'><code>Rrename</code></span></span><span id='variant.Treadlink' class='variant'><span id='Treadlink.v' class='invisible'><code>Treadlink</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Treadlink.field.fid'><span id='Treadlink.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rreadlink' class='variant'><span id='Rreadlink.v' class='invisible'><code>Rreadlink</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rreadlink.field.target'><span id='Rreadlink.v.target.v' class='invisible'><code>target:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr></table><span id='variant.Tgetattr' class='variant'><span id='Tgetattr.v' class='invisible'><code>Tgetattr</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tgetattr.field.fid'><span id='Tgetattr.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tgetattr.field.req_mask'><span id='Tgetattr.v.req_mask.v' class='invisible'><code>req_mask:&nbsp;<a class='struct' href='../../rs9p/fcall/getattr/struct.GetattrMask.html' title='rs9p::fcall::getattr::GetattrMask'>GetattrMask</a></code></span></td><td></td></tr></table><span id='variant.Rgetattr' class='variant'><span id='Rgetattr.v' class='invisible'><code>Rgetattr</code></span></span><div class='docblock'><p>Reserved members specified in the protocol are handled in Encodable/Decodable traits.</p>
+</div><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rgetattr.field.valid'><span id='Rgetattr.v.valid.v' class='invisible'><code>valid:&nbsp;<a class='struct' href='../../rs9p/fcall/getattr/struct.GetattrMask.html' title='rs9p::fcall::getattr::GetattrMask'>GetattrMask</a></code></span></td><td></td></tr><tr><td id='variant.Rgetattr.field.qid'><span id='Rgetattr.v.qid.v' class='invisible'><code>qid:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a></code></span></td><td></td></tr><tr><td id='variant.Rgetattr.field.stat'><span id='Rgetattr.v.stat.v' class='invisible'><code>stat:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Stat.html' title='rs9p::fcall::Stat'>Stat</a></code></span></td><td></td></tr></table><span id='variant.Tsetattr' class='variant'><span id='Tsetattr.v' class='invisible'><code>Tsetattr</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tsetattr.field.fid'><span id='Tsetattr.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tsetattr.field.valid'><span id='Tsetattr.v.valid.v' class='invisible'><code>valid:&nbsp;<a class='struct' href='../../rs9p/fcall/setattr/struct.SetattrMask.html' title='rs9p::fcall::setattr::SetattrMask'>SetattrMask</a></code></span></td><td></td></tr><tr><td id='variant.Tsetattr.field.stat'><span id='Tsetattr.v.stat.v' class='invisible'><code>stat:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.SetAttr.html' title='rs9p::fcall::SetAttr'>SetAttr</a></code></span></td><td></td></tr></table><span id='variant.Rsetattr' class='variant'><span id='Rsetattr.v' class='invisible'><code>Rsetattr</code></span></span><span id='variant.Txattrwalk' class='variant'><span id='Txattrwalk.v' class='invisible'><code>Txattrwalk</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Txattrwalk.field.fid'><span id='Txattrwalk.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Txattrwalk.field.newfid'><span id='Txattrwalk.v.newfid.v' class='invisible'><code>newfid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Txattrwalk.field.name'><span id='Txattrwalk.v.name.v' class='invisible'><code>name:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr></table><span id='variant.Rxattrwalk' class='variant'><span id='Rxattrwalk.v' class='invisible'><code>Rxattrwalk</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rxattrwalk.field.size'><span id='Rxattrwalk.v.size.v' class='invisible'><code>size:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a></code></span></td><td></td></tr></table><span id='variant.Txattrcreate' class='variant'><span id='Txattrcreate.v' class='invisible'><code>Txattrcreate</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Txattrcreate.field.fid'><span id='Txattrcreate.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Txattrcreate.field.name'><span id='Txattrcreate.v.name.v' class='invisible'><code>name:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Txattrcreate.field.attr_size'><span id='Txattrcreate.v.attr_size.v' class='invisible'><code>attr_size:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a></code></span></td><td></td></tr><tr><td id='variant.Txattrcreate.field.flags'><span id='Txattrcreate.v.flags.v' class='invisible'><code>flags:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rxattrcreate' class='variant'><span id='Rxattrcreate.v' class='invisible'><code>Rxattrcreate</code></span></span><span id='variant.Treaddir' class='variant'><span id='Treaddir.v' class='invisible'><code>Treaddir</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Treaddir.field.fid'><span id='Treaddir.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Treaddir.field.offset'><span id='Treaddir.v.offset.v' class='invisible'><code>offset:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a></code></span></td><td></td></tr><tr><td id='variant.Treaddir.field.count'><span id='Treaddir.v.count.v' class='invisible'><code>count:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rreaddir' class='variant'><span id='Rreaddir.v' class='invisible'><code>Rreaddir</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rreaddir.field.data'><span id='Rreaddir.v.data.v' class='invisible'><code>data:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.DirEntryData.html' title='rs9p::fcall::DirEntryData'>DirEntryData</a></code></span></td><td></td></tr></table><span id='variant.Tfsync' class='variant'><span id='Tfsync.v' class='invisible'><code>Tfsync</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tfsync.field.fid'><span id='Tfsync.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rfsync' class='variant'><span id='Rfsync.v' class='invisible'><code>Rfsync</code></span></span><span id='variant.Tlock' class='variant'><span id='Tlock.v' class='invisible'><code>Tlock</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tlock.field.fid'><span id='Tlock.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tlock.field.flock'><span id='Tlock.v.flock.v' class='invisible'><code>flock:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Flock.html' title='rs9p::fcall::Flock'>Flock</a></code></span></td><td></td></tr></table><span id='variant.Rlock' class='variant'><span id='Rlock.v' class='invisible'><code>Rlock</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rlock.field.status'><span id='Rlock.v.status.v' class='invisible'><code>status:&nbsp;<a class='struct' href='../../rs9p/fcall/lstatus/struct.LockStatus.html' title='rs9p::fcall::lstatus::LockStatus'>LockStatus</a></code></span></td><td></td></tr></table><span id='variant.Tgetlock' class='variant'><span id='Tgetlock.v' class='invisible'><code>Tgetlock</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tgetlock.field.fid'><span id='Tgetlock.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tgetlock.field.flock'><span id='Tgetlock.v.flock.v' class='invisible'><code>flock:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Getlock.html' title='rs9p::fcall::Getlock'>Getlock</a></code></span></td><td></td></tr></table><span id='variant.Rgetlock' class='variant'><span id='Rgetlock.v' class='invisible'><code>Rgetlock</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rgetlock.field.flock'><span id='Rgetlock.v.flock.v' class='invisible'><code>flock:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Getlock.html' title='rs9p::fcall::Getlock'>Getlock</a></code></span></td><td></td></tr></table><span id='variant.Tlink' class='variant'><span id='Tlink.v' class='invisible'><code>Tlink</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tlink.field.dfid'><span id='Tlink.v.dfid.v' class='invisible'><code>dfid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tlink.field.fid'><span id='Tlink.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tlink.field.name'><span id='Tlink.v.name.v' class='invisible'><code>name:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr></table><span id='variant.Rlink' class='variant'><span id='Rlink.v' class='invisible'><code>Rlink</code></span></span><span id='variant.Tmkdir' class='variant'><span id='Tmkdir.v' class='invisible'><code>Tmkdir</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tmkdir.field.dfid'><span id='Tmkdir.v.dfid.v' class='invisible'><code>dfid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tmkdir.field.name'><span id='Tmkdir.v.name.v' class='invisible'><code>name:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tmkdir.field.mode'><span id='Tmkdir.v.mode.v' class='invisible'><code>mode:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tmkdir.field.gid'><span id='Tmkdir.v.gid.v' class='invisible'><code>gid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rmkdir' class='variant'><span id='Rmkdir.v' class='invisible'><code>Rmkdir</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rmkdir.field.qid'><span id='Rmkdir.v.qid.v' class='invisible'><code>qid:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a></code></span></td><td></td></tr></table><span id='variant.Trenameat' class='variant'><span id='Trenameat.v' class='invisible'><code>Trenameat</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Trenameat.field.olddirfid'><span id='Trenameat.v.olddirfid.v' class='invisible'><code>olddirfid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Trenameat.field.oldname'><span id='Trenameat.v.oldname.v' class='invisible'><code>oldname:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Trenameat.field.newdirfid'><span id='Trenameat.v.newdirfid.v' class='invisible'><code>newdirfid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Trenameat.field.newname'><span id='Trenameat.v.newname.v' class='invisible'><code>newname:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr></table><span id='variant.Rrenameat' class='variant'><span id='Rrenameat.v' class='invisible'><code>Rrenameat</code></span></span><span id='variant.Tunlinkat' class='variant'><span id='Tunlinkat.v' class='invisible'><code>Tunlinkat</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tunlinkat.field.dirfd'><span id='Tunlinkat.v.dirfd.v' class='invisible'><code>dirfd:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tunlinkat.field.name'><span id='Tunlinkat.v.name.v' class='invisible'><code>name:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tunlinkat.field.flags'><span id='Tunlinkat.v.flags.v' class='invisible'><code>flags:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Runlinkat' class='variant'><span id='Runlinkat.v' class='invisible'><code>Runlinkat</code></span></span><span id='variant.Tauth' class='variant'><span id='Tauth.v' class='invisible'><code>Tauth</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tauth.field.afid'><span id='Tauth.v.afid.v' class='invisible'><code>afid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tauth.field.uname'><span id='Tauth.v.uname.v' class='invisible'><code>uname:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tauth.field.aname'><span id='Tauth.v.aname.v' class='invisible'><code>aname:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tauth.field.n_uname'><span id='Tauth.v.n_uname.v' class='invisible'><code>n_uname:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rauth' class='variant'><span id='Rauth.v' class='invisible'><code>Rauth</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rauth.field.aqid'><span id='Rauth.v.aqid.v' class='invisible'><code>aqid:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a></code></span></td><td></td></tr></table><span id='variant.Tattach' class='variant'><span id='Tattach.v' class='invisible'><code>Tattach</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tattach.field.fid'><span id='Tattach.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tattach.field.afid'><span id='Tattach.v.afid.v' class='invisible'><code>afid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tattach.field.uname'><span id='Tattach.v.uname.v' class='invisible'><code>uname:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tattach.field.aname'><span id='Tattach.v.aname.v' class='invisible'><code>aname:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr><tr><td id='variant.Tattach.field.n_uname'><span id='Tattach.v.n_uname.v' class='invisible'><code>n_uname:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rattach' class='variant'><span id='Rattach.v' class='invisible'><code>Rattach</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rattach.field.qid'><span id='Rattach.v.qid.v' class='invisible'><code>qid:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a></code></span></td><td></td></tr></table><span id='variant.Tversion' class='variant'><span id='Tversion.v' class='invisible'><code>Tversion</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tversion.field.msize'><span id='Tversion.v.msize.v' class='invisible'><code>msize:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tversion.field.version'><span id='Tversion.v.version.v' class='invisible'><code>version:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr></table><span id='variant.Rversion' class='variant'><span id='Rversion.v' class='invisible'><code>Rversion</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rversion.field.msize'><span id='Rversion.v.msize.v' class='invisible'><code>msize:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Rversion.field.version'><span id='Rversion.v.version.v' class='invisible'><code>version:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></td><td></td></tr></table><span id='variant.Tflush' class='variant'><span id='Tflush.v' class='invisible'><code>Tflush</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tflush.field.oldtag'><span id='Tflush.v.oldtag.v' class='invisible'><code>oldtag:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a></code></span></td><td></td></tr></table><span id='variant.Rflush' class='variant'><span id='Rflush.v' class='invisible'><code>Rflush</code></span></span><span id='variant.Twalk' class='variant'><span id='Twalk.v' class='invisible'><code>Twalk</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Twalk.field.fid'><span id='Twalk.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Twalk.field.newfid'><span id='Twalk.v.newfid.v' class='invisible'><code>newfid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Twalk.field.wnames'><span id='Twalk.v.wnames.v' class='invisible'><code>wnames:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></span></td><td></td></tr></table><span id='variant.Rwalk' class='variant'><span id='Rwalk.v' class='invisible'><code>Rwalk</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rwalk.field.wqids'><span id='Rwalk.v.wqids.v' class='invisible'><code>wqids:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>&gt;</code></span></td><td></td></tr></table><span id='variant.Tread' class='variant'><span id='Tread.v' class='invisible'><code>Tread</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tread.field.fid'><span id='Tread.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Tread.field.offset'><span id='Tread.v.offset.v' class='invisible'><code>offset:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a></code></span></td><td></td></tr><tr><td id='variant.Tread.field.count'><span id='Tread.v.count.v' class='invisible'><code>count:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rread' class='variant'><span id='Rread.v' class='invisible'><code>Rread</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rread.field.data'><span id='Rread.v.data.v' class='invisible'><code>data:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Data.html' title='rs9p::fcall::Data'>Data</a></code></span></td><td></td></tr></table><span id='variant.Twrite' class='variant'><span id='Twrite.v' class='invisible'><code>Twrite</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Twrite.field.fid'><span id='Twrite.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr><tr><td id='variant.Twrite.field.offset'><span id='Twrite.v.offset.v' class='invisible'><code>offset:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a></code></span></td><td></td></tr><tr><td id='variant.Twrite.field.data'><span id='Twrite.v.data.v' class='invisible'><code>data:&nbsp;<a class='struct' href='../../rs9p/fcall/struct.Data.html' title='rs9p::fcall::Data'>Data</a></code></span></td><td></td></tr></table><span id='variant.Rwrite' class='variant'><span id='Rwrite.v' class='invisible'><code>Rwrite</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Rwrite.field.count'><span id='Rwrite.v.count.v' class='invisible'><code>count:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Tclunk' class='variant'><span id='Tclunk.v' class='invisible'><code>Tclunk</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tclunk.field.fid'><span id='Tclunk.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rclunk' class='variant'><span id='Rclunk.v' class='invisible'><code>Rclunk</code></span></span><span id='variant.Tremove' class='variant'><span id='Tremove.v' class='invisible'><code>Tremove</code></span></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Tremove.field.fid'><span id='Tremove.v.fid.v' class='invisible'><code>fid:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></span></td><td></td></tr></table><span id='variant.Rremove' class='variant'><span id='Rremove.v' class='invisible'><code>Rremove</code></span></span><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-339' class='srclink' href='../../src/rs9p/src/fcall.rs.html#738-797' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fids' class='method'><span id='fids.v' class='invisible'><code>fn <a href='#method.fids' class='fnname'>fids</a>(&amp;self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>&gt;</code></span></h4>
+<div class='docblock'><p>Get the fids which self contains</p>
+</div><h4 id='method.newfids' class='method'><span id='newfids.v' class='invisible'><code>fn <a href='#method.newfids' class='fnname'>newfids</a>(&amp;self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>&gt;</code></span></h4>
+<div class='docblock'><p>Get the newfids which self contains</p>
+</div><h4 id='method.qids' class='method'><span id='qids.v' class='invisible'><code>fn <a href='#method.qids' class='fnname'>qids</a>(&amp;self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../rs9p/fcall/struct.Qid.html' title='rs9p::fcall::Qid'>Qid</a>&gt;</code></span></h4>
+<div class='docblock'><p>Get the qids which self contains</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4601' class='srclink' href='../../src/rs9p/src/fcall.rs.html#656' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4707' class='srclink' href='../../src/rs9p/src/fcall.rs.html#656' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4871' class='srclink' href='../../src/rs9p/src/fcall.rs.html#656' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5294' class='srclink' href='../../src/rs9p/src/fcall.rs.html#656' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html' title='core::cmp::PartialOrd'>PartialOrd</a> for <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5297' class='srclink' href='../../src/rs9p/src/fcall.rs.html#656' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.partial_cmp' class='method'><span id='partial_cmp.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#tymethod.partial_cmp' class='fnname'>partial_cmp</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='https://doc.rust-lang.org/nightly/core/cmp/enum.Ordering.html' title='core::cmp::Ordering'>Ordering</a>&gt;</code></span></h4>
+<div class='docblock'><p>This method returns an ordering between <code>self</code> and <code>other</code> values if one exists. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#tymethod.partial_cmp">Read more</a></p>
+</div><h4 id='method.lt' class='method'><span id='lt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.lt' class='fnname'>lt</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests less than (for <code>self</code> and <code>other</code>) and is used by the <code>&lt;</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.lt">Read more</a></p>
+</div><h4 id='method.le' class='method'><span id='le.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.le' class='fnname'>le</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests less than or equal to (for <code>self</code> and <code>other</code>) and is used by the <code>&lt;=</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.le">Read more</a></p>
+</div><h4 id='method.gt' class='method'><span id='gt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.gt' class='fnname'>gt</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests greater than (for <code>self</code> and <code>other</code>) and is used by the <code>&gt;</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.gt">Read more</a></p>
+</div><h4 id='method.ge' class='method'><span id='ge.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.ge' class='fnname'>ge</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests greater than or equal to (for <code>self</code> and <code>other</code>) and is used by the <code>&gt;=</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.ge">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html' title='core::cmp::Ord'>Ord</a> for <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6456' class='srclink' href='../../src/rs9p/src/fcall.rs.html#656' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.cmp' class='method'><span id='cmp.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html#tymethod.cmp' class='fnname'>cmp</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/cmp/enum.Ordering.html' title='core::cmp::Ordering'>Ordering</a></code></span></h4>
+<div class='docblock'><p>This method returns an <code>Ordering</code> between <code>self</code> and <code>other</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html#tymethod.cmp">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html' title='core::hash::Hash'>Hash</a> for <a class='enum' href='../../rs9p/fcall/enum.Fcall.html' title='rs9p::fcall::Fcall'>Fcall</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6771' class='srclink' href='../../src/rs9p/src/fcall.rs.html#656' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class='method'><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the state given, updating the hasher as necessary.</p>
+</div><h4 id='method.hash_slice' class='method'><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[Self]</a>, state: &amp;mut H) <span class='where'>where H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a></span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the state provided.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rs9p";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

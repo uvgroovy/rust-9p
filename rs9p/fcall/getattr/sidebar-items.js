@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["ALL","Mask for All fields above"],["ATIME",""],["BASIC","Mask for fields up to BLOCKS"],["BLOCKS",""],["BTIME",""],["CTIME",""],["DATA_VERSION",""],["GEN",""],["GID",""],["INO",""],["MODE",""],["MTIME",""],["NLINK",""],["RDEV",""],["SIZE",""],["UID",""]],"struct":[["GetattrMask",""]]});

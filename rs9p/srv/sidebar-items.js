@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["srv","Start the 9P filesystem (fork child processes)."],["srv_spawn","Start the 9P filesystem (spawning threads)."]],"struct":[["Fid","Represents a fid of clients holding associated `Filesystem::Fid`."]],"trait":[["Filesystem","Filesystem server trait."]]});

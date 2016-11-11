@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `string` mod in crate `rs9p`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, string">
+
+    <title>rs9p::error::string - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../../index.html'>rs9p</a>::<wbr><a href='../index.html'>error</a></p><script>window.sidebarCurrent = {name: 'string', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../../index.html'>rs9p</a>::<wbr><a href='../index.html'>error</a>::<wbr><a class='mod' href=''>string</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-93' class='srclink' href='../../../src/rs9p/src/error.rs.html#120-244' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>9P error strings imported from Linux.</p>
+
+<h1 id='protocol' class='section-header'><a href='#protocol'>Protocol</a></h1>
+<p>9P2000</p>
+</div><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.E2BIG.html'
+                                  title='rs9p::error::string::E2BIG'>E2BIG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EACCES.html'
+                                  title='rs9p::error::string::EACCES'>EACCES</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EACCES2.html'
+                                  title='rs9p::error::string::EACCES2'>EACCES2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EACCES3.html'
+                                  title='rs9p::error::string::EACCES3'>EACCES3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EACCES4.html'
+                                  title='rs9p::error::string::EACCES4'>EACCES4</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EAGAIN.html'
+                                  title='rs9p::error::string::EAGAIN'>EAGAIN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EAGAIN2.html'
+                                  title='rs9p::error::string::EAGAIN2'>EAGAIN2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EAGAIN3.html'
+                                  title='rs9p::error::string::EAGAIN3'>EAGAIN3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EALREADY.html'
+                                  title='rs9p::error::string::EALREADY'>EALREADY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EBADF.html'
+                                  title='rs9p::error::string::EBADF'>EBADF</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EBADF2.html'
+                                  title='rs9p::error::string::EBADF2'>EBADF2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EBADF3.html'
+                                  title='rs9p::error::string::EBADF3'>EBADF3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EBADF4.html'
+                                  title='rs9p::error::string::EBADF4'>EBADF4</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EBADFD.html'
+                                  title='rs9p::error::string::EBADFD'>EBADFD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EBADMSG.html'
+                                  title='rs9p::error::string::EBADMSG'>EBADMSG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EBUSY.html'
+                                  title='rs9p::error::string::EBUSY'>EBUSY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ECOMM.html'
+                                  title='rs9p::error::string::ECOMM'>ECOMM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ECONNABORTED.html'
+                                  title='rs9p::error::string::ECONNABORTED'>ECONNABORTED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ECONNREFUSED.html'
+                                  title='rs9p::error::string::ECONNREFUSED'>ECONNREFUSED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ECONNREFUSED2.html'
+                                  title='rs9p::error::string::ECONNREFUSED2'>ECONNREFUSED2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ECONNRESET.html'
+                                  title='rs9p::error::string::ECONNRESET'>ECONNRESET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EDEADLK.html'
+                                  title='rs9p::error::string::EDEADLK'>EDEADLK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EDOM.html'
+                                  title='rs9p::error::string::EDOM'>EDOM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EDQUOT.html'
+                                  title='rs9p::error::string::EDQUOT'>EDQUOT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EEXIST.html'
+                                  title='rs9p::error::string::EEXIST'>EEXIST</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EEXIST2.html'
+                                  title='rs9p::error::string::EEXIST2'>EEXIST2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EEXIST3.html'
+                                  title='rs9p::error::string::EEXIST3'>EEXIST3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EEXIST4.html'
+                                  title='rs9p::error::string::EEXIST4'>EEXIST4</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EFAULT.html'
+                                  title='rs9p::error::string::EFAULT'>EFAULT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EFBIG.html'
+                                  title='rs9p::error::string::EFBIG'>EFBIG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EFBIG2.html'
+                                  title='rs9p::error::string::EFBIG2'>EFBIG2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EHOSTDOWN.html'
+                                  title='rs9p::error::string::EHOSTDOWN'>EHOSTDOWN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EHOSTUNREACH.html'
+                                  title='rs9p::error::string::EHOSTUNREACH'>EHOSTUNREACH</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIDRM.html'
+                                  title='rs9p::error::string::EIDRM'>EIDRM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIDRM2.html'
+                                  title='rs9p::error::string::EIDRM2'>EIDRM2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EINPROGRESS.html'
+                                  title='rs9p::error::string::EINPROGRESS'>EINPROGRESS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EINTR.html'
+                                  title='rs9p::error::string::EINTR'>EINTR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EINVAL.html'
+                                  title='rs9p::error::string::EINVAL'>EINVAL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EINVAL2.html'
+                                  title='rs9p::error::string::EINVAL2'>EINVAL2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EINVAL3.html'
+                                  title='rs9p::error::string::EINVAL3'>EINVAL3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EINVAL4.html'
+                                  title='rs9p::error::string::EINVAL4'>EINVAL4</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EINVAL5.html'
+                                  title='rs9p::error::string::EINVAL5'>EINVAL5</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO.html'
+                                  title='rs9p::error::string::EIO'>EIO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO10.html'
+                                  title='rs9p::error::string::EIO10'>EIO10</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO2.html'
+                                  title='rs9p::error::string::EIO2'>EIO2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO3.html'
+                                  title='rs9p::error::string::EIO3'>EIO3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO4.html'
+                                  title='rs9p::error::string::EIO4'>EIO4</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO5.html'
+                                  title='rs9p::error::string::EIO5'>EIO5</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO6.html'
+                                  title='rs9p::error::string::EIO6'>EIO6</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO7.html'
+                                  title='rs9p::error::string::EIO7'>EIO7</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO8.html'
+                                  title='rs9p::error::string::EIO8'>EIO8</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EIO9.html'
+                                  title='rs9p::error::string::EIO9'>EIO9</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EISCONN.html'
+                                  title='rs9p::error::string::EISCONN'>EISCONN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EISDIR.html'
+                                  title='rs9p::error::string::EISDIR'>EISDIR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EISNAM.html'
+                                  title='rs9p::error::string::EISNAM'>EISNAM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ELOOP.html'
+                                  title='rs9p::error::string::ELOOP'>ELOOP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EMFILE.html'
+                                  title='rs9p::error::string::EMFILE'>EMFILE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EMLINK.html'
+                                  title='rs9p::error::string::EMLINK'>EMLINK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EMSGSIZE.html'
+                                  title='rs9p::error::string::EMSGSIZE'>EMSGSIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENAMETOOLONG.html'
+                                  title='rs9p::error::string::ENAMETOOLONG'>ENAMETOOLONG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENAMETOOLONG2.html'
+                                  title='rs9p::error::string::ENAMETOOLONG2'>ENAMETOOLONG2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENETDOWN.html'
+                                  title='rs9p::error::string::ENETDOWN'>ENETDOWN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENETRESET.html'
+                                  title='rs9p::error::string::ENETRESET'>ENETRESET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENETUNREACH.html'
+                                  title='rs9p::error::string::ENETUNREACH'>ENETUNREACH</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENFILE.html'
+                                  title='rs9p::error::string::ENFILE'>ENFILE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOBUFS.html'
+                                  title='rs9p::error::string::ENOBUFS'>ENOBUFS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENODATA.html'
+                                  title='rs9p::error::string::ENODATA'>ENODATA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENODEV.html'
+                                  title='rs9p::error::string::ENODEV'>ENODEV</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOENT.html'
+                                  title='rs9p::error::string::ENOENT'>ENOENT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOENT_ALLOC.html'
+                                  title='rs9p::error::string::ENOENT_ALLOC'>ENOENT_ALLOC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOENT_DIR.html'
+                                  title='rs9p::error::string::ENOENT_DIR'>ENOENT_DIR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOENT_FILE.html'
+                                  title='rs9p::error::string::ENOENT_FILE'>ENOENT_FILE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOENT_FILE2.html'
+                                  title='rs9p::error::string::ENOENT_FILE2'>ENOENT_FILE2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOENT_PATH.html'
+                                  title='rs9p::error::string::ENOENT_PATH'>ENOENT_PATH</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOLCK.html'
+                                  title='rs9p::error::string::ENOLCK'>ENOLCK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOLINK.html'
+                                  title='rs9p::error::string::ENOLINK'>ENOLINK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOMEM.html'
+                                  title='rs9p::error::string::ENOMEM'>ENOMEM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOMSG.html'
+                                  title='rs9p::error::string::ENOMSG'>ENOMSG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENONET.html'
+                                  title='rs9p::error::string::ENONET'>ENONET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOPKG.html'
+                                  title='rs9p::error::string::ENOPKG'>ENOPKG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOPROTOOPT.html'
+                                  title='rs9p::error::string::ENOPROTOOPT'>ENOPROTOOPT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOSPC.html'
+                                  title='rs9p::error::string::ENOSPC'>ENOSPC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOSPC2.html'
+                                  title='rs9p::error::string::ENOSPC2'>ENOSPC2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOSYS.html'
+                                  title='rs9p::error::string::ENOSYS'>ENOSYS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOTBLK.html'
+                                  title='rs9p::error::string::ENOTBLK'>ENOTBLK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOTCONN.html'
+                                  title='rs9p::error::string::ENOTCONN'>ENOTCONN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOTDIR.html'
+                                  title='rs9p::error::string::ENOTDIR'>ENOTDIR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOTDIR2.html'
+                                  title='rs9p::error::string::ENOTDIR2'>ENOTDIR2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOTEMPTY.html'
+                                  title='rs9p::error::string::ENOTEMPTY'>ENOTEMPTY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOTEMPTY2.html'
+                                  title='rs9p::error::string::ENOTEMPTY2'>ENOTEMPTY2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENOTSOCK.html'
+                                  title='rs9p::error::string::ENOTSOCK'>ENOTSOCK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ENXIO.html'
+                                  title='rs9p::error::string::ENXIO'>ENXIO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EOPNOTSUPP.html'
+                                  title='rs9p::error::string::EOPNOTSUPP'>EOPNOTSUPP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPERM.html'
+                                  title='rs9p::error::string::EPERM'>EPERM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPERM_CONV.html'
+                                  title='rs9p::error::string::EPERM_CONV'>EPERM_CONV</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPERM_GRP.html'
+                                  title='rs9p::error::string::EPERM_GRP'>EPERM_GRP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPERM_RMROOT.html'
+                                  title='rs9p::error::string::EPERM_RMROOT'>EPERM_RMROOT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPERM_SPFILE.html'
+                                  title='rs9p::error::string::EPERM_SPFILE'>EPERM_SPFILE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPERM_TRUNCATE.html'
+                                  title='rs9p::error::string::EPERM_TRUNCATE'>EPERM_TRUNCATE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPERM_WSTAT.html'
+                                  title='rs9p::error::string::EPERM_WSTAT'>EPERM_WSTAT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPFNOSUPPORT.html'
+                                  title='rs9p::error::string::EPFNOSUPPORT'>EPFNOSUPPORT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPIPE.html'
+                                  title='rs9p::error::string::EPIPE'>EPIPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPROTO.html'
+                                  title='rs9p::error::string::EPROTO'>EPROTO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPROTO2.html'
+                                  title='rs9p::error::string::EPROTO2'>EPROTO2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPROTO3.html'
+                                  title='rs9p::error::string::EPROTO3'>EPROTO3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EPROTONOSUPPORT.html'
+                                  title='rs9p::error::string::EPROTONOSUPPORT'>EPROTONOSUPPORT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ERANGE.html'
+                                  title='rs9p::error::string::ERANGE'>ERANGE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EREMOTE.html'
+                                  title='rs9p::error::string::EREMOTE'>EREMOTE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EREMOTEIO.html'
+                                  title='rs9p::error::string::EREMOTEIO'>EREMOTEIO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EROFS.html'
+                                  title='rs9p::error::string::EROFS'>EROFS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EROFS2.html'
+                                  title='rs9p::error::string::EROFS2'>EROFS2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EROFS3.html'
+                                  title='rs9p::error::string::EROFS3'>EROFS3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ESHUTDOWN.html'
+                                  title='rs9p::error::string::ESHUTDOWN'>ESHUTDOWN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ESOCKTNOSUPPORT.html'
+                                  title='rs9p::error::string::ESOCKTNOSUPPORT'>ESOCKTNOSUPPORT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ESPIPE.html'
+                                  title='rs9p::error::string::ESPIPE'>ESPIPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ESPIPE2.html'
+                                  title='rs9p::error::string::ESPIPE2'>ESPIPE2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ESTRPIPE.html'
+                                  title='rs9p::error::string::ESTRPIPE'>ESTRPIPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ETIMEDOUT.html'
+                                  title='rs9p::error::string::ETIMEDOUT'>ETIMEDOUT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ETXTBSY.html'
+                                  title='rs9p::error::string::ETXTBSY'>ETXTBSY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ETXTBSY2.html'
+                                  title='rs9p::error::string::ETXTBSY2'>ETXTBSY2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.ETXTBSY3.html'
+                                  title='rs9p::error::string::ETXTBSY3'>ETXTBSY3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EUSERS.html'
+                                  title='rs9p::error::string::EUSERS'>EUSERS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.EXDEV.html'
+                                  title='rs9p::error::string::EXDEV'>EXDEV</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "rs9p";
+    </script>
+    <script src="../../../jquery.js"></script>
+    <script src="../../../main.js"></script>
+    <script defer src="../../../search-index.js"></script>
+</body>
+</html>
